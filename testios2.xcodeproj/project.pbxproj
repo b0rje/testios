@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2CD8F5015D6B93D00886479 /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B2CD8F4F15D6B93D00886479 /* EAGLView.mm */; };
+		B2CD8F5315D6BA4800886479 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD8F5215D6BA4800886479 /* QuartzCore.framework */; };
+		C0A39F9015D5B97C0070E63B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A39F8F15D5B97C0070E63B /* UIKit.framework */; };
+		C0A39F9215D5B97C0070E63B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A39F9115D5B97C0070E63B /* Foundation.framework */; };
+		C0A39F9415D5B97C0070E63B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A39F9315D5B97C0070E63B /* CoreGraphics.framework */; };
+		C0A39F9615D5B97C0070E63B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A39F9515D5B97C0070E63B /* GLKit.framework */; };
+		C0A39F9815D5B97C0070E63B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A39F9715D5B97C0070E63B /* OpenGLES.framework */; };
+		C0A39F9E15D5B97C0070E63B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0A39F9C15D5B97C0070E63B /* InfoPlist.strings */; };
+		C0A39FA015D5B97C0070E63B /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = C0A39F9F15D5B97C0070E63B /* main.mm */; };
+		C0A39FA415D5B97C0070E63B /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C0A39FA315D5B97C0070E63B /* AppDelegate.mm */; };
+		C0A39FAC15D5B97C0070E63B /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C0A39FAB15D5B97C0070E63B /* Shader.fsh */; };
+		C0A39FAE15D5B97C0070E63B /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C0A39FAD15D5B97C0070E63B /* Shader.vsh */; };
+		C0A39FB115D5B97C0070E63B /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C0A39FB015D5B97C0070E63B /* ViewController.mm */; };
+		C0A39FB815D5CC8E0070E63B /* Post.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C0A39FB715D5CC8D0070E63B /* Post.fsh */; };
+		C0A39FBA15D5CCA50070E63B /* Post.vsh in Sources */ = {isa = PBXBuildFile; fileRef = C0A39FB915D5CCA50070E63B /* Post.vsh */; };
+		C0A39FBB15D5D1D00070E63B /* Post.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C0A39FB915D5CCA50070E63B /* Post.vsh */; };
+		C0A39FD015D693CC0070E63B /* ShaderUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0A39FCE15D693CC0070E63B /* ShaderUtils.cpp */; };
+		C0A39FD315D694010070E63B /* FileUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = C0A39FD215D694010070E63B /* FileUtils.mm */; };
+		C0A39FD715D6954B0070E63B /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0A39FD515D694460070E63B /* Logger.cpp */; };
+		C0A39FD915D69A8C0070E63B /* FramebufferTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0A39FD815D69A8C0070E63B /* FramebufferTexture.cpp */; };
+		C0A39FDD15D6A2280070E63B /* Post2.fsh in Sources */ = {isa = PBXBuildFile; fileRef = C0A39FDB15D6A2280070E63B /* Post2.fsh */; };
+		C0A39FDE15D6A2280070E63B /* Post2.vsh in Sources */ = {isa = PBXBuildFile; fileRef = C0A39FDC15D6A2280070E63B /* Post2.vsh */; };
+		C0A39FE015D6A2D70070E63B /* Post2.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C0A39FDB15D6A2280070E63B /* Post2.fsh */; };
+		C0A39FE115D6A2D70070E63B /* Post2.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C0A39FDC15D6A2280070E63B /* Post2.vsh */; };
+		C0A7A80415D7DF1000B3DF61 /* VertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0A7A80315D7DF1000B3DF61 /* VertexBuffer.cpp */; };
+		C0A7A80715D7E82300B3DF61 /* MarchingCubes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0A7A80615D7E82300B3DF61 /* MarchingCubes.cpp */; };
+		C0A7A80B15D7E9E400B3DF61 /* math3d.c in Sources */ = {isa = PBXBuildFile; fileRef = C0A7A80A15D7E9E400B3DF61 /* math3d.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B2CD8F4E15D6B93D00886479 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		B2CD8F4F15D6B93D00886479 /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EAGLView.mm; sourceTree = "<group>"; };
+		B2CD8F5215D6BA4800886479 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C0A39F8B15D5B97B0070E63B /* testios2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testios2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A39F8F15D5B97C0070E63B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C0A39F9115D5B97C0070E63B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C0A39F9315D5B97C0070E63B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C0A39F9515D5B97C0070E63B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		C0A39F9715D5B97C0070E63B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C0A39F9B15D5B97C0070E63B /* testios2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testios2-Info.plist"; sourceTree = "<group>"; };
+		C0A39F9D15D5B97C0070E63B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C0A39F9F15D5B97C0070E63B /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		C0A39FA115D5B97C0070E63B /* testios2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testios2-Prefix.pch"; sourceTree = "<group>"; };
+		C0A39FA215D5B97C0070E63B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C0A39FA315D5B97C0070E63B /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		C0A39FAB15D5B97C0070E63B /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		C0A39FAD15D5B97C0070E63B /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		C0A39FAF15D5B97C0070E63B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C0A39FB015D5B97C0070E63B /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		C0A39FB715D5CC8D0070E63B /* Post.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Post.fsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
+		C0A39FB915D5CCA50070E63B /* Post.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Post.vsh; sourceTree = "<group>"; };
+		C0A39FCE15D693CC0070E63B /* ShaderUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderUtils.cpp; sourceTree = "<group>"; };
+		C0A39FCF15D693CC0070E63B /* ShaderUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderUtils.h; sourceTree = "<group>"; };
+		C0A39FD115D693F00070E63B /* FileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtils.h; sourceTree = "<group>"; };
+		C0A39FD215D694010070E63B /* FileUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FileUtils.mm; sourceTree = "<group>"; };
+		C0A39FD415D694460070E63B /* Debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Debug.h; sourceTree = "<group>"; };
+		C0A39FD515D694460070E63B /* Logger.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Logger.cpp; sourceTree = "<group>"; };
+		C0A39FD615D694460070E63B /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		C0A39FD815D69A8C0070E63B /* FramebufferTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FramebufferTexture.cpp; sourceTree = "<group>"; };
+		C0A39FDA15D69AA30070E63B /* FramebufferTexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FramebufferTexture.h; sourceTree = "<group>"; };
+		C0A39FDB15D6A2280070E63B /* Post2.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Post2.fsh; sourceTree = "<group>"; };
+		C0A39FDC15D6A2280070E63B /* Post2.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Post2.vsh; sourceTree = "<group>"; };
+		C0A7A80215D7DF1000B3DF61 /* VertexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexBuffer.h; sourceTree = "<group>"; };
+		C0A7A80315D7DF1000B3DF61 /* VertexBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VertexBuffer.cpp; sourceTree = "<group>"; };
+		C0A7A80615D7E82300B3DF61 /* MarchingCubes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MarchingCubes.cpp; sourceTree = "<group>"; };
+		C0A7A80815D7E83D00B3DF61 /* MarchingCubes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarchingCubes.h; sourceTree = "<group>"; };
+		C0A7A80915D7E9D300B3DF61 /* math3d.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		C0A7A80A15D7E9E400B3DF61 /* math3d.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = math3d.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0A39F8815D5B97B0070E63B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2CD8F5315D6BA4800886479 /* QuartzCore.framework in Frameworks */,
+				C0A39F9415D5B97C0070E63B /* CoreGraphics.framework in Frameworks */,
+				C0A39F9815D5B97C0070E63B /* OpenGLES.framework in Frameworks */,
+				C0A39F9015D5B97C0070E63B /* UIKit.framework in Frameworks */,
+				C0A39F9215D5B97C0070E63B /* Foundation.framework in Frameworks */,
+				C0A39F9615D5B97C0070E63B /* GLKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0A39F8015D5B97B0070E63B = {
+			isa = PBXGroup;
+			children = (
+				B2CD8F5215D6BA4800886479 /* QuartzCore.framework */,
+				C0A39F9915D5B97C0070E63B /* testios2 */,
+				C0A39F8E15D5B97B0070E63B /* Frameworks */,
+				C0A39F8C15D5B97B0070E63B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0A39F8C15D5B97B0070E63B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0A39F8B15D5B97B0070E63B /* testios2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0A39F8E15D5B97B0070E63B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0A39F8F15D5B97C0070E63B /* UIKit.framework */,
+				C0A39F9115D5B97C0070E63B /* Foundation.framework */,
+				C0A39F9315D5B97C0070E63B /* CoreGraphics.framework */,
+				C0A39F9515D5B97C0070E63B /* GLKit.framework */,
+				C0A39F9715D5B97C0070E63B /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0A39F9915D5B97C0070E63B /* testios2 */ = {
+			isa = PBXGroup;
+			children = (
+				B2CD8F4E15D6B93D00886479 /* EAGLView.h */,
+				B2CD8F4F15D6B93D00886479 /* EAGLView.mm */,
+				C0A39FDF15D6A2340070E63B /* shaders */,
+				C0A39FCD15D693A10070E63B /* utils */,
+				C0A39FA215D5B97C0070E63B /* AppDelegate.h */,
+				C0A39FA315D5B97C0070E63B /* AppDelegate.mm */,
+				C0A39FAF15D5B97C0070E63B /* ViewController.h */,
+				C0A39FB015D5B97C0070E63B /* ViewController.mm */,
+				C0A39F9A15D5B97C0070E63B /* Supporting Files */,
+				C0A7A80215D7DF1000B3DF61 /* VertexBuffer.h */,
+				C0A7A80315D7DF1000B3DF61 /* VertexBuffer.cpp */,
+				C0A7A80615D7E82300B3DF61 /* MarchingCubes.cpp */,
+				C0A7A80815D7E83D00B3DF61 /* MarchingCubes.h */,
+			);
+			path = testios2;
+			sourceTree = "<group>";
+		};
+		C0A39F9A15D5B97C0070E63B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0A39F9B15D5B97C0070E63B /* testios2-Info.plist */,
+				C0A39F9C15D5B97C0070E63B /* InfoPlist.strings */,
+				C0A39F9F15D5B97C0070E63B /* main.mm */,
+				C0A39FA115D5B97C0070E63B /* testios2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0A39FCD15D693A10070E63B /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				C0A39FD415D694460070E63B /* Debug.h */,
+				C0A39FD515D694460070E63B /* Logger.cpp */,
+				C0A39FD615D694460070E63B /* Logger.h */,
+				C0A39FD215D694010070E63B /* FileUtils.mm */,
+				C0A39FD115D693F00070E63B /* FileUtils.h */,
+				C0A39FCE15D693CC0070E63B /* ShaderUtils.cpp */,
+				C0A39FCF15D693CC0070E63B /* ShaderUtils.h */,
+				C0A39FDA15D69AA30070E63B /* FramebufferTexture.h */,
+				C0A39FD815D69A8C0070E63B /* FramebufferTexture.cpp */,
+				C0A7A80915D7E9D300B3DF61 /* math3d.h */,
+				C0A7A80A15D7E9E400B3DF61 /* math3d.c */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		C0A39FDF15D6A2340070E63B /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				C0A39FB715D5CC8D0070E63B /* Post.fsh */,
+				C0A39FB915D5CCA50070E63B /* Post.vsh */,
+				C0A39FDB15D6A2280070E63B /* Post2.fsh */,
+				C0A39FDC15D6A2280070E63B /* Post2.vsh */,
+				C0A39FAB15D5B97C0070E63B /* Shader.fsh */,
+				C0A39FAD15D5B97C0070E63B /* Shader.vsh */,
+			);
+			name = shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0A39F8A15D5B97B0070E63B /* testios2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0A39FB415D5B97C0070E63B /* Build configuration list for PBXNativeTarget "testios2" */;
+			buildPhases = (
+				C0A39F8715D5B97B0070E63B /* Sources */,
+				C0A39F8815D5B97B0070E63B /* Frameworks */,
+				C0A39F8915D5B97B0070E63B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testios2;
+			productName = testios2;
+			productReference = C0A39F8B15D5B97B0070E63B /* testios2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0A39F8215D5B97B0070E63B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C0A39F8515D5B97B0070E63B /* Build configuration list for PBXProject "testios2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C0A39F8015D5B97B0070E63B;
+			productRefGroup = C0A39F8C15D5B97B0070E63B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0A39F8A15D5B97B0070E63B /* testios2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0A39F8915D5B97B0070E63B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0A39FE015D6A2D70070E63B /* Post2.fsh in Resources */,
+				C0A39FE115D6A2D70070E63B /* Post2.vsh in Resources */,
+				C0A39FBB15D5D1D00070E63B /* Post.vsh in Resources */,
+				C0A39F9E15D5B97C0070E63B /* InfoPlist.strings in Resources */,
+				C0A39FAC15D5B97C0070E63B /* Shader.fsh in Resources */,
+				C0A39FAE15D5B97C0070E63B /* Shader.vsh in Resources */,
+				C0A39FB815D5CC8E0070E63B /* Post.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0A39F8715D5B97B0070E63B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0A39FD715D6954B0070E63B /* Logger.cpp in Sources */,
+				C0A39FA015D5B97C0070E63B /* main.mm in Sources */,
+				C0A39FA415D5B97C0070E63B /* AppDelegate.mm in Sources */,
+				C0A39FB115D5B97C0070E63B /* ViewController.mm in Sources */,
+				C0A39FBA15D5CCA50070E63B /* Post.vsh in Sources */,
+				C0A39FD015D693CC0070E63B /* ShaderUtils.cpp in Sources */,
+				C0A39FD315D694010070E63B /* FileUtils.mm in Sources */,
+				C0A39FD915D69A8C0070E63B /* FramebufferTexture.cpp in Sources */,
+				C0A39FDD15D6A2280070E63B /* Post2.fsh in Sources */,
+				C0A39FDE15D6A2280070E63B /* Post2.vsh in Sources */,
+				B2CD8F5015D6B93D00886479 /* EAGLView.mm in Sources */,
+				C0A7A80415D7DF1000B3DF61 /* VertexBuffer.cpp in Sources */,
+				C0A7A80715D7E82300B3DF61 /* MarchingCubes.cpp in Sources */,
+				C0A7A80B15D7E9E400B3DF61 /* math3d.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C0A39F9C15D5B97C0070E63B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0A39F9D15D5B97C0070E63B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0A39FB215D5B97C0070E63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0A39FB315D5B97C0070E63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0A39FB515D5B97C0070E63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "testios2/testios2-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "testios2/testios2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C0A39FB615D5B97C0070E63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "testios2/testios2-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "testios2/testios2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0A39F8515D5B97B0070E63B /* Build configuration list for PBXProject "testios2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0A39FB215D5B97C0070E63B /* Debug */,
+				C0A39FB315D5B97C0070E63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0A39FB415D5B97C0070E63B /* Build configuration list for PBXNativeTarget "testios2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0A39FB515D5B97C0070E63B /* Debug */,
+				C0A39FB615D5B97C0070E63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0A39F8215D5B97B0070E63B /* Project object */;
+}
